@@ -37,8 +37,11 @@ let increment=()=>{
   setCount(count+1)
 }
 let decrement=()=>{
-
+if(count>0)
+{
   setCount(count-1)
+}
+  
 }
 
   return (

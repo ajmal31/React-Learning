@@ -1,22 +1,34 @@
 
 import './App.css';
-import Header from './components/Header'
-import Home from './components/Home'
-
+import States from './components/States';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'react-bootstrap';
 
 
 function App() {
-  let name='Billionaire'
+  
+
+  var states=[
+    {name:'kerala',language:'Malayalam',population:1000},
+    {name:'Tamilnadu',language:'Tamil',population:2000},
+    {name:'Karnataka',language:'kannada',population:3000},
+    {name:'Andrapradesh',language:'Hindi',population:4000},
+    {name:'Himchalpradesh',language:'ethooo',population:5000}
+    
+
+
+  ]
  
   return (
 
   
     <div className="App">
-   
-    <Header/>
-     
+    <Container>
+    
+   <States states={states}/>
+  
+    </Container>
     </div>
   
 
