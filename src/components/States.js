@@ -6,20 +6,14 @@ const States = ({states}) => {
     
 
 
-  
+  let number=1
     return (
-      <div>
-      {states.map((state) => {
-        return (
-      <div className="bg-success text-white">
-        {console.log('helooo3')}
-        <h1>state: {state.name}</h1>
-        <h2>language: {state.language}</h2>
-        <h3>population: {state.population}</h3>
-      </div>
-        )
-    })}
-    </div>
+     <div>
+      
+     { number > 0 ? (<h1>positive</h1>): number<0 ?(<h1>negative</h1>):(<h1>Zero</h1>) }
+    
+    
+     </div>
     ); 
  
   
